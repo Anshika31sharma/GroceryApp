@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes shrink {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  
+  .removing-item img {
+    animation: shrink 0.8s forwards;
+    transition: opacity 0.8s ease-out;
+  }
+  
